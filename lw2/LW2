@@ -1,0 +1,53 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    // ДИСКЛЕЙМЕР все взято з паралельної реальності де Україна знаходиться на вершині
+    // техно світу а люди ніколи не чули що таке росія.
+    
+    // Назва компютера
+string compName = "UA GameGraphic Elemetary Computer";
+// Номер моделі (7 цифр)
+unsigned int ModelID = 1234567;
+// Сирійний код(5 цифр)
+unsigned short int versionCode = 54321;
+// Вік компютера
+unsigned short int copmYears = 17;
+// Працює?
+bool working = true;
+// Відеокарта
+string videographic = "UkrForce UKRX 3090 Ua";
+// Процесор
+string GPU = "Heroes Azov 2022HS";
+// ОЗУ
+string OperativeMemory = "17 UAB";
+// SDD
+string SSD = "255 TUAB";
+// Повна назва (секретний код)
+int compFullName = ModelID + versionCode;
+
+unsigned int totalMemoryInBytes = 
+
+sizeof(compFullName) +
+sizeof(compName) +
+sizeof(copmYears) +
+sizeof(working) +
+sizeof(videographic) +
+sizeof(GPU) +
+sizeof(OperativeMemory) +
+sizeof(SSD);
+
+cout << "Повна назва компютера:\t" << compFullName << endl;
+cout << "Назва компютера:\t\t" << compName << endl;
+cout << "Вік компютера:\t\t\t" << copmYears << endl;
+cout << "Працює:\t\t\t\t\t" << ((working)? "Так" : "Ні") << endl;
+cout << "Відеокарта:\t\t\t\t" << videographic << endl;
+cout << "Процесор:\t\t\t\t" << GPU << endl;
+cout << "ОЗУ:\t\t\t\t\t" << OperativeMemory << endl;
+cout << "SDD:\t\t\t\t\t" << SSD << endl;
+cout << "Загальний об'єм використанної пам'ятi (в байтах):\t" <<
+
+totalMemoryInBytes << endl;
+}
